@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- Snoopy click interaction script -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Make background blue for the sky -->
+    <a-scene background="color:skyblue" flying-snoopy>
+      <!-- Loading assets -->
+
+      <!-- GLTF Model: 
+        Title: Woodstock  
+        Author: crisradeolun
+        Date: 2023
+        URL: https://sketchfab.com/3d-models/woodstock-a75fc4f4b2704de6b80a4937c8dfa287 -->
+      <a-assets>
+        <a-asset-item id="woodstock"
+        src="assets/woodstock/scene.gltf">
+        </a-asset-item>
+
+        <!-- GLTF Model: 
+          Title: Snoopy Red Baron
+          Author: EggMan28
+          Date: 2023
+          URL: https://sketchfab.com/3d-models/snoopy-red-baron-6635644bbefc45da8b5b80ba45361408 -->
+        <a-asset-item id="snoopy"
+        src="assets/snoopy_red_baron/scene.gltf">
+        </a-asset-item>
+
+        <!-- GLTF Model: 
+          Title: cartoon cloud 
+          Author: RunemarkStudio
+          Date: 2018
+          URL: https://sketchfab.com/3d-models/cartoon-cloud-f31be54812a348df86d94171098dae19 -->
+        <a-asset-item id="cloud"
+        src="assets/cartoon_cloud/scene.gltf">
+        </a-asset-item>
+      </a-assets>
+
+      <!-- Grass -->
+      <a-box color="green" width="500" height="0.5" depth="500" density="40"
+      position="0 -10 0" rotation="0 0 0" scale="2 0.5 3"></a-box>
+      
+      <!-- Grouping and animating clouds -->
+      <a-entity id="clouds" 
+      animation="property: position; 
+                             to: 15 0 0; 
+                             dur: 15000; 
+                             easing: linear;
+                             loop:true;
+                             elasticity: 0">
+
+        <a-entity gltf-model="#cloud"
+        position="-40 22 -5">
+        </a-entity>
+
+        <a-entity gltf-model="#cloud"
+        position="-30 22 -5"
+        scale="2 2 2">
+        </a-entity>
+
+        <a-entity gltf-model="#cloud"
+        position="-3 30 -5"
+        scale="2 2 2">
+        </a-entity>
+
+        <a-entity gltf-model="#cloud"
+        position="-11 22 -5">
+        </a-entity>
+
+        <a-entity gltf-model="#cloud"
+        position="10 22 -5">
+        </a-entity>
+
+        <a-entity gltf-model="#cloud"
+        position="18 27 -5"
+        scale="2.5 2 2">
+        </a-entity>
+    </a-entity>
+      
+    <!-- Camera placement -->
+      <a-entity position="3 10 20" rotation="0 0 0">
+        <a-camera></a-camera>
+      </a-entity>
+
+      <!-- Snoopy on his dog house -->
+      <a-entity id="dogHouse">
+        <a-entity gltf-model="#snoopy"
+        position="5 2 0"
+        rotation="0 270 0"> 
+        </a-entity>
+
+        <!-- Woodstock -->
+        <a-entity gltf-model="#woodstock"
+        position="7.5 7.2 0"
+        rotation="0 270 0">
+        </a-entity>
+    </a-entity>
+</a-entity>
+    </a-scene>
+  </body>
+ 

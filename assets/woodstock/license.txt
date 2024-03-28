@@ -1,0 +1,11 @@
+Model Information:
+* title:	Woodstock
+* source:	https://sketchfab.com/3d-models/woodstock-a75fc4f4b2704de6b80a4937c8dfa287
+* author:	crisradeolun (https://sketchfab.com/crisradeolun)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Woodstock" (https://sketchfab.com/3d-models/woodstock-a75fc4f4b2704de6b80a4937c8dfa287) by crisradeolun (https://sketchfab.com/crisradeolun) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
